@@ -1,8 +1,10 @@
 package example.cashcard;
 
+import org.springframework.data.annotation.Id;
+
 //*
 public class CashCard {
-    private Long id;
+    @Id private Long id;
     private Double amount;
 
     public CashCard(Long id, Double amount) {
